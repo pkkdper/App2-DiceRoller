@@ -2,7 +2,6 @@ package com.example.app2_diceroller
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
@@ -24,14 +23,10 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
         // Create new Dice object with 6 sides and roll it
         val dice1 = Dice(6)
-        val dice2 = Dice(6)
         val diceRoll1 = dice1.roll()
-        val diceRoll2 = dice2.roll()
         // Update the screen with the dice roll
-        val resultTextView1: TextView = findViewById(R.id.textView1)
-        resultTextView1.text = diceRoll1.toString()
-        val resultTextView2: TextView = findViewById(R.id.textView2)
-        resultTextView2.text = diceRoll2.toString()
+//        val resultTextView1: TextView = findViewById(R.id.textView1)
+//        resultTextView1.text = diceRoll1.toString()
     }
 }
 
